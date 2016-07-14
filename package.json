@@ -1,0 +1,31 @@
+{
+  "name": "bootbot-cli",
+  "version": "1.0.0",
+  "description": "BootBot CLI",
+  "main": "index.js",
+  "bin": {
+    "bootbot": "index.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charca/bootbot-cli.git"
+  },
+  "keywords": [
+    "bootbot",
+    "cli",
+    "chatbot",
+    "bot"
+  ],
+  "author": "Maxi Ferreira <charca@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Charca/bootbot-cli/issues"
+  },
+  "homepage": "https://github.com/Charca/bootbot-cli#readme",
+  "dependencies": {
+    "meow": "^3.7.0"
+  }
+}
