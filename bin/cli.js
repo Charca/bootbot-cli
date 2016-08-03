@@ -7,14 +7,16 @@ const cli = meow(`
   Usage:
     bootbot <command>
   Commands:
-    n, new          Creates a new BootBot Project
+    n, new <name>       Creates a new BootBot Project
+    s, start            Starts your bot with a localtunnel server
 
   ${pkg.name} v${pkg.version}
   License: ${pkg.license}
   Website: ${pkg.homepage}
 `, {
   alias: {
-    n: 'new'
+    n: 'new',
+    s: 'start'
   }
 });
 

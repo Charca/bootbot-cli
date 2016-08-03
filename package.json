@@ -2,10 +2,11 @@
   "name": "bootbot-cli",
   "version": "1.0.1",
   "description": "BootBot CLI",
-  "main": "index.js",
+  "main": "./index.js",
   "bin": {
-    "bootbot": "index.js"
+    "bootbot": "./index.js"
   },
+  "preferGlobal": "true",
   "scripts": {
     "test": "mocha"
   },
@@ -26,6 +27,16 @@
   },
   "homepage": "https://github.com/Charca/bootbot-cli#readme",
   "dependencies": {
-    "meow": "^3.7.0"
+    "config": "^1.21.0",
+    "fs-extra": "^0.30.0",
+    "inquirer": "^1.1.2",
+    "is-blank": "^1.1.0",
+    "localtunnel": "^1.8.1",
+    "lodash": "^4.14.1",
+    "meow": "^3.7.0",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.10.0",
+    "randomstring": "^1.1.5",
+    "require-dir": "^0.3.0"
   }
 }
