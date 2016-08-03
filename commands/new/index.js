@@ -18,7 +18,9 @@ if (command === 'new') {
     options.project_name = projectName;
     options.verify_token = randomstring.generate();
     options.bot_port = 8007;
-    options.bot_tunnel_subdomain = 'bootbot' + projectName + randomstring.generate({ length: 8, capitalization: 'lowercase'});
+    options.bot_tunnel_subdomain = 'bootbot' +
+      projectName.replace(/[^a-z0-9]/gi,'').toLowerCase() +
+      randomstring.generate({ length: 8, capitalization: 'lowercase'});
     options.bot_tunnel_subdomain = options.bot_tunnel_subdomain.slice(0, 60);
     generate(projectName, options);
     console.log(`
