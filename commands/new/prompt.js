@@ -2,13 +2,13 @@
 const inquirer = require('inquirer');
 const questions = [
   {
-    name: 'app_secret',
+    name: 'appSecret',
     type: 'password',
     message: 'Facebook App Secret:',
     default: ''
   },
   {
-    name: 'access_token',
+    name: 'accessToken',
     type: 'password',
     message: 'Facebook Page Access Token:',
     default: ''

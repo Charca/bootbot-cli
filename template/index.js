@@ -3,9 +3,9 @@ const BootBot = require('bootbot');
 const config = require('config');
 
 const bot = new BootBot({
-  accessToken: config.get('access_token'),
-  verifyToken: config.get('verify_token'),
-  appSecret: config.get('app_secret')
+  accessToken: config.get('accessToken'),
+  verifyToken: config.get('verifyToken'),
+  appSecret: config.get('appSecret')
 });
 
 /**
@@ -17,4 +17,4 @@ bot.on('message', (payload, chat) => {
   chat.say(`Echo: ${text}`);
 });
 
-bot.start(config.get('bot_port'));
+bot.start(config.get('botPort'));

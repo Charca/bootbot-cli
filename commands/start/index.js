@@ -8,9 +8,9 @@ if (command === 'start') {
   const localtunnel = require('localtunnel');
   const config = require('config');
 
-  const BOT_PORT = config.get('bot_port') || 8007;
-  const BOT_TUNNEL_SUBDOMAIN = config.get('bot_tunnel_subdomain') || '';
-  const VERIFY_TOKEN = config.get('verify_token');
+  const BOT_PORT = config.get('botPort') || 8007;
+  const BOT_TUNNEL_SUBDOMAIN = config.get('botTunnelSubDomain') || '';
+  const VERIFY_TOKEN = config.get('verifyToken');
 
   const SCRIPT_INDEX = script_src || './index.js';
 

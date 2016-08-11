@@ -1,7 +1,7 @@
 {
-  "access_token": "<%= access_token %>",
-  "verify_token": "<%= verify_token %>",
-  "app_secret": "<%= app_secret %>",
-  "bot_port": <%= bot_port %>,
-  "bot_tunnel_subdomain": "<%= bot_tunnel_subdomain %>"
+  "accessToken": "<%= accessToken %>",
+  "verifyToken": "<%= verifyToken %>",
+  "appSecret": "<%= appSecret %>",
+  "botPort": <%= botPort %>,
+  "botTunnelSubDomain": "<%= botTunnelSubDomain %>"
 }

@@ -15,13 +15,13 @@ if (command === 'new') {
 
   prompt().then((options) => {
     console.log('Creating new BootBot Project...');
-    options.project_name = projectName;
-    options.verify_token = randomstring.generate();
-    options.bot_port = 8007;
-    options.bot_tunnel_subdomain = 'bootbot' +
+    options.projectName = projectName;
+    options.verifyToken = randomstring.generate();
+    options.botPort = 8007;
+    options.botTunnelSubDomain = 'bootbot' +
       projectName.replace(/[^a-z0-9]/gi,'').toLowerCase() +
       randomstring.generate({ length: 8, capitalization: 'lowercase'});
-    options.bot_tunnel_subdomain = options.bot_tunnel_subdomain.slice(0, 60);
+    options.botTunnelSubDomain = options.botTunnelSubDomain.slice(0, 60);
     generate(projectName, options);
     console.log(`
       Project created!
